@@ -28,8 +28,8 @@ mostrarPalavra palavra = intersperse ' ' [if a `elem` ['a'..'z'] then '_' else a
 
 tentarLetra :: String -> Char -> Int -> IO ()
 tentarLetra palavra letra tentativas
-	| letra `elem` palavra 	= jogo [if letra == a then toUpper letra else a | a <- palavra]
-	| otherwise 			= jogo palavra (tentativas -1)
+	| letra `elem` palavra 	= jogo [if letra == a then toUpper letra else a | a <- palavra] tentativas
+	| otherwise = jogo palavra (tentativas -1)
 
 jogo :: String -> Int -> IO ()
 jogo palavra tentativas
@@ -40,7 +40,7 @@ jogo palavra tentativas
 		putStrLn $ mostrarPalavra palavra
 		putStrLn "Voce Perdeu"
 	| otherwise = do
-		putStrLn $ "Voce tem " ++ show tentativas ++ "tentativas restantes."
+		putStrLn $ "Voce tem " ++ show tentativas ++ " tentativas restantes."
 		putStrLn $mostrarPalavra palavra
 		putStr "Digite uma letra: "
 		tentativaDeLetra <- getLine
