@@ -1,4 +1,6 @@
-import Data.List 
+import Data.List
+import System.IO
+import Data.Char
 
 
 --Matriz com imagens dos bonecos da forca em uma matriz transposta
