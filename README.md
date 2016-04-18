@@ -36,5 +36,4 @@ Como desenvolvedores, entendemos que nosso trabalho deve ser sempre respeitado e
 * [Fórum de Dúvidas Portugal-a-programar - Hangman](http://www.portugal-a-programar.pt/topic/33198-explicacoes-para-jogo-em-haskell/)
 * [Livro "Learn You a Haskell for Great Good!" - Disponibiliza seu uso gratuito online](http://learnyouahaskell.com/chapters)
 * [Solução de uma forca implementada por Tom Janssens - Disponível publicamente pelo github](https://gist.github.com/ToJans/e97db3b4ed3902677361)
-
-
+* [Aprenda mais sobre programação funcional](https://en.wikipedia.org/wiki/Functional_programming)
