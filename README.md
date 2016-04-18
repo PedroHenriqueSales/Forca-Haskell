@@ -6,9 +6,9 @@ Módulo II da disciplina Paradigmas de Programação da Universidade de Brasíli
 
 1. Baixe o código para um diretório local. Podem ser utilizadas tanto a opção clone quanto apenas baixar o .zip que o gitHub disponibiliza.
 2. Abra o terminal e vá para o diretório onde se encontra os arquivos que foram baixados.
-3. Tendo o interpretador GHC do haskell instalado, digite o comando `ghci` no terminal. (Caso necessite instalar, clique aqui [GHC do Haslkell](https://www.haskell.org/ghc/download)
-4. Carregue o arquivo com o comando `:load Forca-Haskell.hs`
-5. Execute a função `main` no terminal
+3. Tendo o interpretador GHC do haskell instalado, digite o comando `ghci` no terminal. (Caso necessite instalar, clique aqui [GHC do Haslkell](https://www.haskell.org/ghc/download) )
+4. Carregue o arquivo com o comando `:load forca.hs`.
+5. Execute a função `main` no terminal. Note a necessidade ter se ter o arquivo dicionario.txt dentro do mesmo diretório da aplicação.
 6. Desfrute de toda a diversão que esta forca pode lhe porpocionar. 
 
 ## O que é este trabalho?
