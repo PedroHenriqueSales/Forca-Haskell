@@ -4,10 +4,7 @@ import Data.Char
 import Data.List (transpose)
 import System.Random (randomIO)
 import Control.Applicative
-
-
-discionarioPalavras :: FilePath
-discionarioPalavras = "discionario.txt"
+import Path_forca
 
 --Matriz com imagens dos bonecos da forca em uma matriz transposta
 imagensBonecoForca :: [[String]]
