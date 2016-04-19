@@ -34,6 +34,7 @@ tentarLetra palavra letra tentativas
 	| letra `elem` palavra 	= jogo [if letra == a then toUpper letra else a | a <- palavra] tentativas
 	| otherwise = jogo palavra (tentativas -1)
 
+-- Esta funcao faz um sorteio de uma palvra dentro de um arquivo .txt de forma aleatoria
 sorteiaPalavra :: IO[Char]
 sorteiaPalavra = do
 	discionario <- readFile discionarioPalavras
@@ -47,6 +48,7 @@ sorteiaPalavra = do
 			'\'' `notElem` palavra &&
 			map toLower palavra == palavra
 
+-- Funcao que realiza o jogo e o loop do jogo, verificando se ainda restam numero de tentativas e apresentando imagem da forca
 jogo :: String -> Int -> IO ()
 jogo palavra tentativas
 	| palavra == map toUpper palavra = do
@@ -63,9 +65,10 @@ jogo palavra tentativas
 		tentativaDeLetra <- getLine
 		tentarLetra palavra (head tentativaDeLetra) tentativas
 
+-- Inicia o jogo
 main :: IO()
 main = do
-	hSetBuffering stdout NoBuffering
+	hSetBuffering stdout NoBuffering --
 	putStrLn "Bem vindo ao Jogo da Forca"
 	palavra <- sorteiaPalavra
 	jogo (map toLower palavra) numeroMaxErros
