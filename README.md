@@ -2,7 +2,7 @@
 
 Módulo II da disciplina Paradigmas de Programação da Universidade de Brasília
 
- ## Instruções para execução
+## Instruções para execução
  
  1. Baixe o código para um diretório local. Podem ser utilizadas tanto a opção clone quanto apenas baixar o .zip que o gitHub disponibiliza.
  2. Abra o terminal e vá para o diretório onde se encontra os arquivos que foram baixados.
